@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Coleção de Mamíferos da UFLA</title>
+        <link rel="icon" href="imagens/favicon.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/carousel.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <!-- HOME-->
+        <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+        
+        <!-- LINHA DE PESQUISA-->
+        <li class="nav-item"><a class="nav-link" href="paginas/linha.php">Linha de Pesquisa</a></li>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+
+        <!-- COLEÇÃO-->
+        <li class="nav-item"><a class="nav-link" href="paginas/colecao.php">Coleção</a></li>
+
+        <!-- LABORATÓRIO -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="laboratorio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laboratório</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="paginas/membros.php">Membros</a>
+            <a class="dropdown-item" href="paginas/publicacoes.php">Publicações</a>
+            <a class="dropdown-item" href="paginas/fotos.php">Fotos</a>
+          </div>
+        </li>
+
+        <!-- CONTATO -->
+        <li class="nav-item"><a class="nav-link" href="paginas/contato.php">Contato</a></li>
+
+        <!-- SOBRE -->
+        <li class="nav-item"><a class="nav-link" href="paginas/sobre.php">Sobre</a></li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Busca">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+      </form>
+    </div>
+  </nav>
+
+  <div id="carouselSlide" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="imagens/slide/1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="imagens/slide/2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="imagens/slide/3.jgp" alt="Third slide">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p class="float-right"><a href="#">Retorne ao topo</a></p>
+      <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </div>
+
+  <!-- Lista de scripts em Javascript utilizados na página. -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="scripts/bootstrap.min.js"></script>
+</body>
+</html>

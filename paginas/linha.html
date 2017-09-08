@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Coleção de Mamíferos da UFLA</title>
+        <link rel="icon" href="../imagens/favicon.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/carousel.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <!-- HOME-->
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        
+        <!-- LINHA DE PESQUISA-->
+        <li class="nav-item active"><a class="nav-link" href="#">Linha de Pesquisa<span class="sr-only">(current)</span></a></li>
+       
+        <!-- COLEÇÃO-->
+        <li class="nav-item"><a class="nav-link" href="colecao.php">Coleção</a></li>
+
+        <!-- LABORATÓRIO -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="laboratorio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laboratório</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="membros.php">Membros</a>
+            <a class="dropdown-item" href="publicacoes.php">Publicações</a>
+            <a class="dropdown-item" href="fotos.php">Fotos</a>
+          </div>
+        </li>
+
+        <!-- CONTATO -->
+        <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
+
+        <!-- SOBRE -->
+        <li class="nav-item"><a class="nav-link" href="sobre.php">Sobre</a></li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Busca">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+      </form>
+    </div>
+  </nav>
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h3 class="display-4">Linhas de pesquisas e seus projetos</h3>
+      <p>Caro usuário, nesta página você pode visualizar as linhas de pesquisas e seus respectivos projetos que estão em andamento ou já foram concretizados através dos pesquisadores pertencentes ao laboratório.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-12">
+        <section id='dados' >
+
+        </section>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p class="float-right"><a href="#">Retorne ao topo</a></p>
+      <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </div>
+
+  <!-- Lista de scripts em Javascript utilizados na página. -->
+  <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/popper.min.js"></script>
+  <script src="../scripts/bootstrap.min.js"></script>
+  <script src="../scripts/linhapesquisa.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Coleção de Mamíferos da UFLA</title>
+        <link rel="icon" href="../imagens/favicon.png" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/carousel.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+
+        <!-- HOME-->
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        
+        <!-- LINHA DE PESQUISA-->
+        <li class="nav-item"><a class="nav-link" href="linha.php">Linha de Pesquisa</a></li>
+       
+        <!-- COLEÇÃO-->
+        <li class="nav-item"><a class="nav-link" href="colecao.php">Coleção</a></li>
+
+        <!-- LABORATÓRIO -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="laboratorio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laboratório</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="membros.php">Membros</a>
+            <a class="dropdown-item" href="publicacoes.php">Publicações</a>
+            <a class="dropdown-item" href="fotos.php">Fotos</a>
+          </div>
+        </li>
+
+        <!-- CONTATO -->
+        <li class="nav-item active"><a class="nav-link" href="#">Contato <span class="sr-only">(current)</span></a></li>
+
+        <!-- SOBRE -->
+        <li class="nav-item"><a class="nav-link" href="sobre.php">Sobre</a></li>
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Busca" aria-label="Busca">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
+      </form>
+    </div>
+  </nav>
+  
+  <div class="jumbotron">
+    <div class="container">
+      <h3 class="display-4">Formulário para contato</h3>
+      <p>Caro usuário, nesta página você pode entrar em contato com o responsável da coleção através do formulário abaixo.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <form method="POST" action="../scripts/contato.php" id="formulario">
+          
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <textarea class="form-control" rows="5" id="assunto" name="mensagem"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-default">Enviar</button>
+        
+        </form>  
+        
+        <div id="form-messages"></div>
+      </div>
+
+      <div class="col-md-5">
+        <!-- https://www.google.com.br/maps?q=-21.226934,-44.980621&hl=en&ll=-21.227119,-44.980704&spn=0.001553,0.002411&num=1&t=m&z=19&iwloc=near -->
+			  <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" 
+				marginwidth="0" src="https://www.google.com.br/maps?q=-21.226934,-44.980621&amp;num=1&amp;hl=en&amp;ie=UTF8&amp;ll=-21.227192,-44.980704&amp;spn=0.001553,0.002411&amp;t=m&amp;z=14&amp;iwloc=near&amp;output=embed"></iframe>
+				<br />
+        <small><a href="https://www.google.com.br/maps?q=-21.226934,-44.980621&amp;num=1&amp;hl=en&amp;ie=UTF8&amp;ll=-21.227192,-44.980704&amp;spn=0.001553,0.002411&amp;t=m&amp;z=14&amp;iwloc=near&amp;source=embed" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small>
+        
+        <address>
+          <strong>Coleção de Mamíferos</strong><br>
+          Departamento de Biologia - UFLA<br>
+          Caixa Postal: 3037<br/>
+          Lavras - MG<br>
+          37200-000<br>
+          <abbr title="Phone">Tel.: </abbr>+55 035 3822-1882
+        </address>
+
+<address>
+  <strong>Email</strong><br>
+  <a href="mailto:#">rgregorin@dbi.ufla.br</a>
+</address>
+
+
+      </div>
+
+    </div>
+
+
+    <hr>
+
+    <!-- RODAPÉ -->
+    <footer>
+      <p class="float-right"><a href="#">Retorne ao topo</a></p>
+      <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </div>
+
+  <!-- Lista de scripts em Javascript utilizados na página. -->
+  <script src="../scripts/jquery-3.2.1.min.js"></script>
+  <script src="../scripts/popper.min.js"></script>
+  <script src="../scripts/bootstrap.min.js"></script>
+  <script src="../scripts/contato.js"></script>
+</body>
+</html>
